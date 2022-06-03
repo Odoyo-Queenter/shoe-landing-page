@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // assigning to properties
+        let obj = {}; //{name:"Table",age:12}
+
+        obj.name = "Table";
+        obj.age = 4;
+
+        console.log(obj);
+        
+        let key1 = "name"
+        let namex = obj[key1];
+        console.log(namex);   
+        
+        //destructing properties
+        const { name, age} = obj;
+        console.log("destructuring properties:",name, age)
+    
+
+        const students = ["Tessa", "Naima", "Rosemary", "Shirlyne"]
+        const [one, two, three, four] = students
+        console.log("destructing students:",one, two, three, four)
+
+
+        //comparison
+
+        var var1 = 3;
+        var var2 = 4;
+
+        //=
+        console.log("3 == var1", 3 == var1)
+
+        var var3 = 3;
+        var var4 = 4;
+
+        //=
+        console.log("\"3 \"== var3", 3 == var1)
+
+        var var1 = 3;
+        var var4 = 4;
+
+        //=
+        console.log("3 == var1", "3" === var1)
+
+        var var1 = 3;
+        var var4 = 4;
+
+        //=
+        // console.log("\"12\">2,)
+
+    </script>
+</body>
+</html>
